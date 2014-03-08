@@ -79,3 +79,10 @@ automacro warpka {
 	}
 }
 
+automacro checkgem {
+	pm /gem/i 
+	call {
+		do pm $.lastpm @invamount(Blue Gemstone)
+	}
+}
+

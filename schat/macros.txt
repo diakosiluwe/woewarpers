@@ -78,4 +78,9 @@ automacro warpka {
 		do chat create "$pubMessage" 2 1
 	}
 }
-
+automacro checkgem {
+	pm /gem/i 
+	call {
+		do pm $.lastpm @invamount(Blue Gemstone)
+	}
+}

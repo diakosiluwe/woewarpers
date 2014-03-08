@@ -1,7 +1,7 @@
-﻿automacro initPub {
+automacro initPub {
 	console /you are now in the game/i
 	call {
-	$pubMessage = Ander
+	$pubMessage = Andle
 	$warpCoordinates = 140 14
 		pause 2
 		do sl 27 $warpCoordinates
@@ -76,6 +76,13 @@ automacro warpka {
 		pause 3
 		do sl 27 $warpCoordinates
 		do chat create "$pubMessage" 2 1
+	}
+}
+
+automacro checkgem {
+	pm /gem/i 
+	call {
+		do pm $.lastpm @invamount(Blue Gemstone)
 	}
 }
 
