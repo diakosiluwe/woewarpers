@@ -1,0 +1,81 @@
+﻿automacro initPub {
+	console /you are now in the game/i
+	call {
+	$pubMessage = Ander
+	$warpCoordinates = 140 14
+		pause 2
+		do sl 27 $warpCoordinates
+		do chat create "$pubMessage" 2 1
+	}
+}
+
+
+automacro warpValf {
+	console /has joined the chat room/i
+	call {
+		do chat kick 1
+		do chat leave
+		do warp 1
+		pause 3
+		do sl 27 $warpCoordinates
+		do chat create "$pubMessage" 2 1
+		
+	}
+}
+
+
+
+automacro resumewarp {
+	priority 2
+	console /added to inventory: blue/i
+	call {
+		do relog 1
+	}
+}
+
+
+
+automacro alesjan {
+	console /casting failed: requirement/i
+	call {
+		
+		do e e1
+		
+	}
+}
+
+automacro bluegem {
+	priority 1
+	console /blue gem needed/i
+	call {
+		do chat create "GEMSTONE" 2 0 123	
+	}
+}
+
+
+
+automacro relogka {
+	pm /relogka/i
+	call {
+	do relog 1
+	}
+}
+
+automacro relogka2 {
+	party /relogka/i
+	call {
+	do relog 1
+	}
+}
+
+automacro warpka {
+	party /warpall/i
+	call {
+		do chat leave
+		do warp 1
+		pause 3
+		do sl 27 $warpCoordinates
+		do chat create "$pubMessage" 2 1
+	}
+}
+

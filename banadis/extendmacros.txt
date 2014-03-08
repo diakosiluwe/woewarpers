@@ -1,0 +1,6 @@
+automacro shetextend {
+	pm /shetextend/i
+	call {
+		do e heh
+	}
+}

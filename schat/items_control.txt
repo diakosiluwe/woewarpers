@@ -1,0 +1,10 @@
+Maneater Root 0 1
+Maneater Blossom 0 1
+Mantis scythe 0 1
+Level 5 Heal 0 1
+Scell 0 1
+red herb 0 1
+rough elunium 0 1
+solid shell 0 1
+emerald 0 1
+green live 0 1
